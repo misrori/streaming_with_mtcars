@@ -15,7 +15,6 @@ def client_thread(conn, ip, port, MAX_BUFFER_SIZE = 4096):
         return -1
 
 def start_server():
-
     import socket
     soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # this is for easy starting/killing the app
