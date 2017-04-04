@@ -33,7 +33,7 @@ def start_server():
         while True: #conn.__getstate__:
             if client_thread(conn, ip, port) != 0:
                 break
-            time.sleep(randint(0,1))
+            time.sleep(randint(0,1)*0.1)
             print(".", end='')
     soc.close()
 
